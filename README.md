@@ -5,7 +5,7 @@
 <i>OBS: É necessário atribuir valores as variáveis "${BEARER}", "${OWNER}" e "${REPO}" para que todos os testes lhe concedam sucesso.</i>
 
 <p align="center">
- <img alt="Exemplo código feito" src="https://uploaddeimagens.com.br/imagens/mkKRwaY" height="120">
+ <img alt="Exemplo código feito" src="https://github.com/Y0uNgD/APITests/blob/master/code-example.png" height="120">
 </p>
 
 ### Executando a Suíte
