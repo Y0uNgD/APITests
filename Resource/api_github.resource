@@ -7,6 +7,7 @@ Documentation      https://github.com/settings/tokens?type=beta
 *** Variables ***
 ${BEARER}             # Seu Token Bearer
 ${GITHUB_HOST}        https://api.github.com
+${USER_URI}           /user
 ${ISSUES_URI}         /repos/${OWNER}/${REPO}/issues
 ${OWNER}              # Nome do dono do repositório
 ${REPO}               # Nome do repositório
@@ -20,7 +21,7 @@ Quando conectar com autenticação BEARER
     Create Session    mygithubAuth    ${GITHUB_HOST}    ${HEADERS}    disable_warnings=True
 
 Então solicitar os dados do meu usuário
-    ${MY_USER_DATA}    GET On Session    mygithubAuth    /user
+    ${MY_USER_DATA}    GET On Session    mygithubAuth    ${USER_URI}
     Log                Meus dados: ${MY_USER_DATA.json()}
 
 Então pesquisar issues do usuário
